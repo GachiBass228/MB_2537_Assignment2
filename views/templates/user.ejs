@@ -1,0 +1,13 @@
+<li>
+ <div class="d-flex flex-column flex-md-row align-items-center  gap-3 my-3">
+    <p class="mb-0"><%= user.username %></p>
+    <p class="mb-0">(<%= user.user_type %>)</p>
+    <a href="/promote/<%= user._id %>" class="btn btn-danger rounded-pill px-3" type="button">
+      Promote to Admin
+    </a>
+    <a href="/demote/<%= user._id %>" class="btn btn-success rounded-pill px-3" type="button">
+      Demote to User
+    </a>
+ </div>
+</li>
+
